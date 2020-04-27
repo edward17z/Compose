@@ -1,0 +1,15 @@
+version: '3'
+services:
+  webapp:
+    container_name: webapp
+    image: edward17z/mywebapp
+    ports:
+     - "8080:80"
+    environment:
+     - AWS_ACCESS_KEY=ejemploxlaksuqpeksljajdlajdks
+     - AWS_SECRET_KEY=ejemploklasjdkncnxlkweufsjdnz
+     - AWS_REGION=us-east-1
+    networks:
+     - public
+networks:
+ public: 
